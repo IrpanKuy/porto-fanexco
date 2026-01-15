@@ -515,6 +515,46 @@
               </button>
             </div>
           </div>
+
+          <!-- portofolio  card 2 -->
+          <div
+            class="portfolio-card group bg-slate-800/50 rounded-2xl overflow-hidden border border-slate-700/50 hover:border-primary-500/50 transition-all duration-300"
+          >
+            <div class="relative overflow-hidden">
+              <img
+                src="gambar-porto/web-reservasi-restoran.jpg"
+                alt="Web Reservasi Restorang"
+                class="w-full h-58 object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Web Reservasi Restorang</h3>
+              <p class="text-gray-400 text-sm mb-4">
+                Web Reservasi Restoran yang dirancang untuk memberikan
+                pengalaman booking yang mulus bagi pelanggan serta sistem
+                manajemen yang efisien bagi pemilik bisnis.
+              </p>
+              <button
+                onclick="openModal('modal2')"
+                class="inline-flex items-center gap-2 text-primary-400 hover:text-primary-300 font-medium transition-colors"
+              >
+                Lihat Detail
+                <svg
+                  class="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -657,8 +697,8 @@
         <div class="p-6">
           <h3 class="text-2xl font-bold mb-4">App Manajemen PKL</h3>
           <p class="text-gray-400 mb-6">
-            Aplikasi manajemen PKL yang dirancang khusus untuk memudahkan
-            Siswa dan Guru dalam mengelola dan menjalankan proyek PKL mereka.
+            Aplikasi manajemen PKL yang dirancang khusus untuk memudahkan Siswa
+            dan Guru dalam mengelola dan menjalankan proyek PKL mereka.
           </p>
           <div class="mb-6">
             <h4 class="font-semibold mb-3 text-gray-200">Fitur Utama:</h4>
@@ -669,7 +709,56 @@
               <li>• Pemilihan tempat PKL</li>
             </ul>
           </div>
-
+        </div>
+      </div>
+    </div>
+    <!-- Modal 2 -->
+    <div
+      id="modal2"
+      class="modal-overlay fixed inset-0 z-[100] hidden items-center justify-center p-4 bg-black/80 backdrop-blur-sm"
+    >
+      <div
+        class="modal-content bg-slate-900 rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto border border-slate-700"
+      >
+        <div class="relative aspect-video overflow-hidden rounded-2xl">
+          <img
+            src="gambar-porto/web-reservasi-restoran.jpg"
+            alt="App Manajemen PKL"
+            class="w-full h-full object-cover"
+          />
+          <button
+            onclick="closeModal('modal2')"
+            class="absolute top-4 right-4 w-10 h-10 bg-black/50 rounded-full flex items-center justify-center hover:bg-black/70 transition-colors"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="p-6">
+          <h3 class="text-2xl font-bold mb-4">Web Reservasi Restoran</h3>
+          <p class="text-gray-400 mb-6">
+            Web Reservasi Restoran yang dirancang untuk memberikan pengalaman
+            booking yang mulus bagi pelanggan serta sistem manajemen yang
+            efisien bagi pemilik bisnis.
+          </p>
+          <div class="mb-6">
+            <h4 class="font-semibold mb-3 text-gray-200">Fitur Utama:</h4>
+            <ul class="text-gray-400 space-y-2 text-sm">
+              <li>• Reservasi meja untuk pembeli</li>
+              <li>• Sistem POS</li>
+              <li>• Monitoring data dan rekap penjualan</li>
+            </ul>
           </div>
         </div>
       </div>
